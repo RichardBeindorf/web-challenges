@@ -1,0 +1,55 @@
+/* Please scroll down to the start of your exercise! */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+section {
+  background-color: lemonchiffon;
+  display: grid;
+  place-items: center;
+}
+
+.skyblue {
+  background-color: skyblue;
+}
+
+button {
+  background-color: white;
+  padding: 8px 25px;
+}
+
+/* Your exercise starts here */
+
+/* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
+
+.button1 {
+  border: 5px dotted #000000;
+  background-color: beige;
+}
+
+.button2 {
+  border-color: #F28705;
+  border-radius: 10px;
+  border-width: 20px;
+}
+
+.button3 {
+  box-shadow: 60px -16px teal;
+  background-color: #F28705;
+  color: white;
+  font-weight: bolder;
+  font-family: serif;
+}
+
+.button4 {
+  box-shadow: 15px -1px 50px #b12a18;
+  border: 0px;
+  padding: 40px;
+}
