@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <form method="PUSH" action="./index.html">
+        <h1>Create your Personal Profile</h1>
+        <fieldset class="outer-border">
+          <p>
+            We want to get to know you! Please enter your personal information.
+          </p>
+          <fieldset class="inner-border">
+            <legend>Personal Information</legend>
+
+            <label from="firstName" aria-label="First Name Input"
+              >First Name:</label
+            >
+            <input type="text" id="firstName" name="firstName" />
+
+            <label from="lastName" aria-label="Last Name Input"
+              >Last Name:</label
+            >
+            <input type="text" id="lastName" name="lastName" />
+
+            <label from="birthday" aria-label="Your Birthday Date"
+              >Your Birthday:</label
+            >
+            <input id="birthday" name="birthday" type="date" />
+          </fieldset>
+          <p>
+            Can you tell us a little bit more? We want tqo annoy you with
+            unwanred adds.
+          </p>
+          <fieldset>
+            <legend>Further Information</legend>
+
+            <label for="favColor" aria-label="Your Favorite Color"
+              >Favorite Color:</label
+            >
+            <input
+              id=""
+              favColor
+              name="favColor"
+              type="color"
+              value="#FF7000"
+            />
+
+            <label for="favPet">What's your favourite pet?</label>
+            <input
+              id="favPet"
+              name="favPet"
+              list="favPetDropdown"
+              placeholder="--Please choose an option--"
+              style="background-color: #ff7000"
+            />
+            <datalist id="favPetDropdown">
+              <option value="cat"></option>
+              <option value="mouse"></option>
+              <option value="prariedog"></option>
+            </datalist>
+          </fieldset>
+          <input type="submit" value="Submit" style="background-color: #FF7000;
+          border: 0px; border-radius: 10px; color: white;"/>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
