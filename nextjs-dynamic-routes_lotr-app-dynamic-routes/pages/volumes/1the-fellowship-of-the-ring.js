@@ -1,13 +1,13 @@
-// import Image from "next/image";
-// import Link from "next/link";
-// import { volumes } from "../../lib/data.js";
+import Image from "next/image";
+import Link from "next/link";
+import { volumes } from "../../lib/data.js";
 
-// export default function VolumeDetail() {
-//   const volumeIndex = volumes.findIndex(
-//     ({ slug }) => slug === "the-fellowship-of-the-ring"
-//   );
+export default function VolumeDetail() {
+  const volumeIndex = volumes.findIndex(
+    ({ slug }) => slug === "the-fellowship-of-the-ring"
+  );
 
-//   const volume = volumes[volumeIndex];
+  const volume = volumes[volumeIndex];
 
 //   if (!volume) {
 //     return null;
