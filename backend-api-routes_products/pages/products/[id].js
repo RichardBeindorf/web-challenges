@@ -4,9 +4,8 @@ import useSWR from "swr";
 export default function SingleProduct(){
     const router = useRouter();
     const { id } = router.query;
-    const { data, isLoading } = useSWR(`./api/products/${id}`, fetcher);
+    const { data, isLoading } = useSWR(`./api/products/${id}`);
     console.log("data in [id]js", data);
-
 
   if (isLoading) {
     return <h1>Loading...</h1>;

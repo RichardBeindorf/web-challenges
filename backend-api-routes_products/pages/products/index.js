@@ -5,7 +5,6 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 export default function Products(){
     const { data, isLoading } = useSWR("./api/products", fetcher);
 
-
   if (isLoading) {
     return <h1>Loading...</h1>;
   }
