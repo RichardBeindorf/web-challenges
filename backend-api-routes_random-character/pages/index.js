@@ -1,3 +1,5 @@
+import RandomCharacter from "../components/index.js";
+
 export default function HomePage() {
-  return <h1>Hello from Next.js!</h1>;
+  return <RandomCharacter/>;
 }
